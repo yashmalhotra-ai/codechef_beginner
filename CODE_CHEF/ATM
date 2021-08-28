@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float bal;
+	int x;
+	cin >> x >> bal;
+	if (bal > x) 
+	{
+		if ((x % 5 == 0) && (x + 0.50 <= bal)) {
+			bal = bal - (x + 0.50);
+			cout << bal << endl;
+		}
+		else {
+			cout << bal << endl;
+		}
+
+	}
+	else {
+		cout << bal << endl;
+	}
+}
